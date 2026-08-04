@@ -1,145 +1,156 @@
-# 🚀 Python AI Course
+# 🚀 Full Stack Python with Gen AI Course
 
-A structured learning repository covering **Python, SQL, Data Structures & Algorithms, Python Libraries, and Generative AI** — with hands-on Jupyter notebooks, SQL scripts, and reference documents.
+Welcome to the **Full Stack Python with Gen AI Course** repository! A comprehensive, hands-on learning roadmap designed to take you from web development fundamentals to advanced Python programming, relational databases, data science libraries, data structures & algorithms, and state-of-the-art Generative AI & LLM applications.
+
+---
+
+## 📌 Course Roadmap & Sections
+
+| Module | Core Topics | Key Resources |
+|---|---|---|
+| 🌐 **Web Fundamentals** | HTML5, CSS3, Semantic Tags, Forms, JavaScript | `HTML-CSS/`, `Javascript/` |
+| 🐍 **Python Programming** | Basics, Pattern Programs, Logic Building, Modules | `python/basics/`, `python/scripts/` |
+| ⚡ **Data Structures & Algorithms** | Stacks, Queues, Linked Lists, List Indexing | `dsa/`, `docs/dsa_*` |
+| 🗄️ **Relational SQL Databases** | DDL, DML, Constraints, Joins (Inner, Full, Cross, Self) | `sql/`, `docs/sql_notes.docx` |
+| 📊 **Python Data & ML Stack** | NumPy, Pandas, Plotly, Scikit-Learn, SciPy | `py_libraries/` |
+| 🤖 **Generative AI & LLMs** | AI/ML/GenAI Architecture, Prompting, LangChain, Project Ideas | `generative-ai/resources/` |
 
 ---
 
 ## 📂 Repository Structure
 
 ```
-Python AI Course/
+Full Stack Python with Gen AI Course/
 │
-├── python/
+├── 🌐 HTML-CSS/                                  # Web Development (HTML5 & CSS3)
+│   ├── 1st.html                                  # Basic HTML structure
+│   ├── Links&Images.html                         # Hyperlinks & media embedding
+│   ├── attributes.html                           # HTML attributes practice
+│   ├── div_span.html                             # Block vs Inline element layout
+│   ├── forms.html                                # Form fields & inputs
+│   ├── list.html                                 # Ordered & unordered lists
+│   ├── protfolio.html                            # Hands-on portfolio project layout
+│   ├── semantic Tags.html                        # Modern HTML5 semantic elements
+│   ├── tables.html                               # HTML table structures
+│   └── HTML_CSS_30Day_Guide_CSS_FullCode.docx   # 30-Day HTML & CSS guide with complete code
+│
+├── ⚡ Javascript/                                # Client-Side Scripting
+│   └── JavaScript_Complete_Course.pdf            # Comprehensive JavaScript course reference
+│
+├── 🐍 python/                                    # Core Python & Logic Building
 │   ├── basics/
-│   │   └── 01_important_concepts.ipynb       # Armstrong, palindrome, string problems
-│   ├── patterns/
-│   │   └── 02_pattern_programs.ipynb         # Number & star pattern printing
-│   ├── problem-solving/
-│   │   └── 03_problem_solving.ipynb          # Max/min, even/odd, logic problems
+│   │   ├── 01_important_concepts.ipynb           # Armstrong, palindrome, string problems
+│   │   ├── 02_pattern_programs.ipynb             # Number & star pattern printing
+│   │   ├── 03_problem_solving.ipynb              # Max/min, logic & arithmetic problems
+│   │   └── power.ipynb                           # Exponentiation & recursion algorithms
 │   └── scripts/
-│       ├── calculator.py                     # Add/subtract functions module
-│       └── module_demo.py                    # Importing and using local modules
+│       ├── calculator.py                         # Modular calculator functions
+│       └── module_demo.py                        # Importing custom modules in Python
 │
-├── dsa/
-│   ├── 01_dsa_day1_stack_queue_linkedlist.ipynb   # Stack, Queue, Linked List
-│   └── 02_dsa_lists_linkedlist.ipynb              # Lists indexing, Linked List insert
+├── 🧱 dsa/                                       # Data Structures & Algorithms
+│   ├── 01_dsa_day1_stack_queue_linkedlist.ipynb  # Stack, Queue, Linked List in Python
+│   └── 02_dsa_lists_linkedlist.ipynb             # List indexing & Linked List node insertions
 │
-├── libraries/
-│   ├── 01_libraries_overview.ipynb           # NumPy, Pandas, SciPy quick tour
-│   └── 02_numpy.ipynb                        # NumPy arrays, operations, types
+├── 📊 py_libraries/                              # Data Science, ML & Visualization
+│   ├── all_libraries_overview.ipynb              # Tour of NumPy, Pandas, SciPy & Matplotlib
+│   ├── numpy.ipynb                               # NumPy arrays, vector operations & types
+│   ├── pandas.ipynb                              # Pandas DataFrames & data manipulation
+│   ├── Plotly.ipynb                              # Interactive charting with Plotly
+│   ├── Scikit-Learn.ipynb                        # Machine Learning models with Scikit-Learn
+│   └── student_data.csv                          # Sample dataset for data analysis
 │
-├── sql/
-│   ├── 01_create_table_basics.sql            # CREATE, INSERT, SELECT
-│   ├── 02_insert_select.sql                  # Primary key, basic CRUD
-│   ├── 03_customer_table.sql                 # Customer table practice
-│   ├── 04_datatypes.sql                      # INT, VARCHAR, DECIMAL, DATE
-│   ├── 05_constraints_notnull.sql            # NOT NULL, ALTER TABLE
-│   ├── 06_update_operations.sql              # UPDATE with WHERE
-│   ├── 07_inner_join.sql                     # INNER JOIN example
-│   ├── 08_full_join.sql                      # FULL OUTER JOIN example
-│   ├── 09_cross_join.sql                     # CROSS JOIN example
-│   ├── 10_self_join.sql                      # SELF JOIN (employee-manager)
-│   └── 11_database_creation.sql             # CREATE DATABASE, CAST, GETDATE
+├── 🗄️ sql/                                        # Database Management & SQL Queries
+│   ├── 01_create_table_basics.sql                # CREATE, INSERT, SELECT basics
+│   ├── 02_insert_select.sql                      # Primary keys & basic CRUD operations
+│   ├── 03_customer_table.sql                     # Relational customer schema practice
+│   ├── 04_datatypes.sql                          # INT, VARCHAR, DECIMAL, DATE datatypes
+│   ├── 05_constraints_notnull.sql                # NOT NULL & ALTER TABLE constraints
+│   ├── 06_update_operations.sql                  # UPDATE queries with WHERE filters
+│   ├── 07_inner_join.sql                         # INNER JOIN operations
+│   ├── 08_full_join.sql                          # FULL OUTER JOIN operations
+│   ├── 09_cross_join.sql                         # CROSS JOIN operations
+│   ├── 10_self_join.sql                          # SELF JOIN (employee-manager hierarchy)
+│   └── 11_database_creation.sql                 # CREATE DATABASE, CAST, GETDATE
 │
-├── generative-ai/
+├── 🤖 generative-ai/                             # Generative AI & Machine Learning
 │   └── resources/
-│       ├── advanced_ai_ml_genai_guide.pdf    # Advanced AI/ML/GenAI reference
-│       ├── generative_ai_fresher_guide.pdf   # GenAI beginner guide (PDF)
-│       └── generative_ai_fresher_guide.docx  # GenAI beginner guide (Word)
+│       ├── advanced_ai_ml_genai_guide.pdf        # Deep dive into AI, ML & GenAI architectures
+│       ├── generative_ai_fresher_guide.pdf       # Beginner-friendly GenAI guide (PDF)
+│       ├── generative_ai_fresher_guide.docx      # Beginner-friendly GenAI guide (Word)
+│       └── projects.pdf                          # GenAI project ideas & practical guides
 │
-├── docs/
-│   ├── dsa_python_reference.docx             # DSA Python reference document
-│   ├── dsa_30day_guide.pdf                   # 30-day DSA beginner PDF guide
-│   ├── python_interview_notes.docx           # Python interview Q&A notes
-│   └── sql_notes.docx                        # SQL notes document
+├── 📑 docs/                                      # Reference Material & Interview Notes
+│   ├── dsa_30day_guide.pdf                       # 30-Day DSA preparation PDF guide
+│   ├── dsa_python_reference.docx                 # DSA reference manual in Python
+│   ├── python_interview_notes.docx               # Comprehensive Python interview Q&A
+│   └── sql_notes.docx                            # Detailed SQL guide & reference notes
 │
-├── requirements.txt                          # All Python dependencies
-├── .gitignore                                # Excludes venv, cache, .env
-└── README.md                                 # This file
+├── requirements.txt                              # Python environment dependencies
+├── .gitignore                                    # Virtual environments & cache exclusions
+└── README.md                                     # Course overview & documentation
 ```
 
 ---
 
-## 📚 Topics Covered
+## ⚙️ Setup & Installation Guide
 
-| Section | Topics |
-|---|---|
-| **Python** | Basics, Patterns, Problem Solving, Modules |
-| **DSA** | Stack, Queue, Linked List, Lists |
-| **Libraries** | NumPy, Pandas, SciPy (overview) |
-| **SQL** | DDL, DML, Joins (INNER, FULL, CROSS, SELF), Constraints |
-| **Generative AI** | AI/ML/GenAI reference guides |
-
----
-
-## ⚙️ Setup & Installation
-
-### 1. Clone the repository
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/GNANESWARKOKKIRALA/Python-AI-Course.git
-cd "Python AI Course"
+git clone https://github.com/GNANESWARKOKKIRALA/Full-Stack-Python-Gen-AI-Course.git
+cd "Full-Stack-Python-Gen-AI-Course"
 ```
 
-### 2. Create a virtual environment
+### 2. Set Up Virtual Environment
 ```bash
 python -m venv venv
 
-# Activate on Windows
+# On Windows (PowerShell / CMD):
 venv\Scripts\activate
 
-# Activate on macOS/Linux
+# On macOS / Linux:
 source venv/bin/activate
 ```
 
-### 3. Install dependencies
+### 3. Install Required Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Launch Jupyter Notebook
+### 4. Launch Jupyter Environment
 ```bash
 jupyter notebook
 ```
 
 ---
 
-## 🖥️ How to Open Notebooks
+## 🛠️ Complete Tech Stack
 
-1. After running `jupyter notebook`, a browser window will open.
-2. Navigate into any folder (`python/basics/`, `dsa/`, `libraries/`, etc.).
-3. Click any `.ipynb` file to open and run it.
-
-> **Tip:** All notebooks have been cleaned and validated. They open without errors on GitHub and locally.
-
----
-
-## 🛠️ Technologies & Libraries
-
-- **Python 3.10+**
-- **SQL** (MySQL / SQL Server syntax)
-- **NumPy**, **Pandas**, **SciPy**, **Matplotlib**, **Seaborn**, **Plotly**
-- **Scikit-learn**, **XGBoost**
-- **PyTorch** (CPU build)
-- **Transformers**, **Sentence-Transformers**, **HuggingFace Hub**
-- **OpenAI**, **LangChain**, **LangGraph**
-- **SQLAlchemy**, **PyMySQL**
-- **Jupyter Notebook**, **IPyKernel**
+- **Frontend & Web Development:** HTML5, CSS3, JavaScript (ES6+)
+- **Core Programming:** Python 3.10+
+- **Relational Databases:** SQL (MySQL, PostgreSQL, Microsoft SQL Server)
+- **Data Analysis & Visualization:** NumPy, Pandas, SciPy, Matplotlib, Seaborn, Plotly
+- **Machine Learning:** Scikit-Learn, XGBoost
+- **Deep Learning & Frameworks:** PyTorch (CPU build), Torchvision, Torchaudio
+- **Generative AI & LLMs:** Transformers, Sentence-Transformers, HuggingFace Hub, OpenAI API, Tiktoken
+- **LLM Orchestration:** LangChain, LangChain-OpenAI, LangGraph, LangSmith
+- **ORMs & Database Drivers:** SQLAlchemy, PyMySQL, Psycopg2-binary
+- **Development Tools:** Jupyter Notebook, IPyKernel, Git
 
 ---
 
-## 📌 Notes
+## 📌 Practical Learning Notes
 
-- This repository is continuously updated as learning progresses.
-- Virtual environments (`venv/`) are excluded via `.gitignore`.
-- All notebooks are cleaned of outputs for clean GitHub rendering.
-- SQL files are written for **Microsoft SQL Server** and **MySQL** syntax.
-
----
-
-## ⭐ Connect
-
-**GitHub:** [https://github.com/GNANESWARKOKKIRALA](https://github.com/GNANESWARKOKKIRALA)
+- **Notebook Validation:** All `.ipynb` notebooks are pre-executed, clean, and error-free.
+- **SQL Dialects:** SQL scripts utilize standard ANSI SQL compatible with **MySQL**, **PostgreSQL**, and **Microsoft SQL Server**.
+- **GenAI Resources:** PDF & DOCX guides under `generative-ai/resources/` cover theoretical concepts and step-by-step project setup.
+- **Web Practice:** Web files under `HTML-CSS/` can be opened directly in any modern browser for immediate visual testing.
 
 ---
 
-> *"Consistency beats intensity."* — Keep learning. Keep building. 🚀
+## ⭐ Connect & Contribute
+
+**GitHub Profile:** [GNANESWARKOKKIRALA](https://github.com/GNANESWARKOKKIRALA)
+
+---
+
+> *"Consistency beats intensity."* — Keep learning, keep coding, and build the future with AI! 🚀
